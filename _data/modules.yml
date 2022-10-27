@@ -7,5 +7,17 @@
 - name: "Economic Data Analysis"
   link-heading: "ECON2061: "
   link: https://www.dur.ac.uk/faculty.handbook/archive/module_description/?year=2021&module_code=ECON2061
+- name: "Econometrics II"
+  link-heading: "ECON41615: "
+  link: https://www.dur.ac.uk/postgraduate.modules/archive/module_description/?year=2013&module_code=ECON41615
+- name: "Principles of Economics"
+  link-heading: "ECON1011: "
+  link: https://www.dur.ac.uk/faculty.handbook/archive/module_description/?year=2018&module_code=ECON1011
+- name: "Foundations of Finance"
+  link-heading: "ECON1131: "
+  link: https://www.dur.ac.uk/faculty.handbook/archive/module_description/?year=2021&module_code=ECON1131
+- name: "Dissertation in Economics"
+  link-heading: "ECON3012: "
+  link: https://www.dur.ac.uk/faculty.handbook/archive/module_description/?year=2021&module_code=ECON3012
 # - name: something name
   # link: www.google.com
