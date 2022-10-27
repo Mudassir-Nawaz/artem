@@ -83,7 +83,8 @@ p > a, cite > a, span > a { @if $link-style == underline
     }
   }
 
-body { width: 87.5%;
+body { 
+       width: 90%;
        margin-left: auto;
        margin-right: auto;
        padding-left: 12.5%;
@@ -405,7 +406,7 @@ header > nav a img{
 ul.footer-links, .credits{
   list-style: none;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 ul.footer-links li{
   display: inline;

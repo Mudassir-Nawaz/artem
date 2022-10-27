@@ -1,10 +1,10 @@
 baseurl: 
-title: Tufte-Jekyll
+title: Artem Nesterov
 subtitle: Content-centric blogging
 # author: clay harmon
 # simple_search: http://google.com/search
 description: A Jekyll theme for content-rich sites
-name: Name
+name: Artem Nesterov
 # markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # permalink: /articles/:short_year/:title

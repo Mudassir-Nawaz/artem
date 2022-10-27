@@ -5,3 +5,8 @@ _site
 config.codekit
 LICENSE
 README.md
+node_modules
+package-lock.json
+package.json
+tailwind.config.js
+input.css
