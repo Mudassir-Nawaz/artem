@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body style="width: 100% !important; margin: 0 auto !important;" class="full-width font-Lato">
+  <body style="width: 100% !important; margin: 0 auto !important;" class="full-width">
     {% include header.html %}
     <section class="p-10">
       <div class="container mx-auto">
@@ -36,7 +36,7 @@
                   <span class="underline">Endogenous Monitoring Through Gossiping in an Infinitely Repeated Prisoner's Dilemma Game: Experimental Evidence</span> with <a style="all: revert;" href="https://sites.google.com/site/kenjukamei2011/">Kenju Kamei</a>
                   <a target="_blank" href="{{'/assets/doc/MPRA_paper_100712.pdf'}}" download style="all: revert;">[latest version]</a>
                   <div>
-                    <a id="show1" class="text-blue-800">(Show Abstract)</a>
+                    <a id="show1" class="text-blue-800 cursor-pointer">(Show Abstract)</a>
                     <p class="text-base hidden mt-2" style="width: 100%;" id="abstract1">
                       Exogenously given reputational information is known to improve cooperation. This paper experimentally studies how people create such information through reporting of partner’s action choices, and whether the endogenous monitoring helps sustain cooperation, in an indefinitely repeated prisoner’s dilemma game. The experiment results show that most subjects report their opponents’ action choices, thereby successfully cooperating with each other, when reporting does not involve a cost. However, subjects are strongly discouraged from reporting when doing so is costly. As a result, they fail to achieve strong cooperation norms when the reported information is privately conveyed only to their next-round interaction partner. Costly reporting occurs only occasionally, even when there is a public record whereby all future partners can check the reported information. However, groups can then foster cooperation norms aided by the public record, because reported information gets gradually accumulated and becomes more informative over time. These findings suggest that the efficacy of endogenous monitoring depends on the quality of platforms that store reported information.
                     </p>
@@ -46,7 +46,7 @@
                   <span class="underline">Conditional Rewarding Behaviour: An Experiment</span>
                   <a target="_blank" href="{{'/assets/doc/MPRA_paper_104944.pdf'}}" download style="all: revert;">[latest version]</a>
                   <div>
-                    <a id="show2" class="text-blue-800">(Show Abstract)</a>
+                    <a id="show2" class="text-blue-800 cursor-pointer">(Show Abstract)</a>
                     <p class="text-base hidden mt-2" style="width: 100%;" id="abstract2">
                       Both peer-to-peer punishments and rewards can be effective in increasing cooperation in dilemma situations. We follow Kamei’s experimental design [2014, Economics Letters 124, pp.199-202], except we use a reward option instead of a punishment one. Consistent with Kamei (2014), decisions to reward are on average positively proportional to the others’ reward to the same recipient. We classify the rewarding types in a similar fashion and find fewer anti-social types.
                     </p>
@@ -84,10 +84,10 @@
                     I am an Associate Fellow of the Higher Education Academy. I have taught a variety of courses across both Economics and Finance, including Python & Machine Learning for Finance.
                   </div>
                   <div>
-                    <a id="listBtn" class="text-blue-800">[Show list of courses]</a>
+                    <a id="listBtn" class="text-blue-800 cursor-pointer">[Show list of courses]</a>
                     <ul class="text-base hidden mt-2" style="width: 100%;" id="list">
                       {% for entry in site.data.modules %}
-                      <a target="_blank" href="{{ entry.link }}" class="block" style="all: none;">{{ entry.name }}</a>
+                      <a target="_blank" href="{{ entry.link }}" class="" style="all: revert;">{{ entry.link-heading }}</a><span>{{ entry.name }}</span><br>
                       {% endfor %}
                     </ul>
                   </div>
