@@ -7,10 +7,12 @@
       <div class="container mx-auto">
         <div class="flex flex-col md:flex-row">
           <div class="border-t-[6px] border-black w-full md:w-1/4 py-2">
-            <h1 class="text-bold text-2xl tracking-widest">ARTEM NESTEROV</h1>
-            <span class="block mt-6 font-serif text-neutral-700">{{ page.sub-heading }}</span>
-            <span class="block font-serif text-neutral-700">{{ page.school }}</span>
-            <img src="{{'assets/img/nesterov_jpeg.jpg'}}" alt="" class="mt-4">
+            <h1 class="text-bold text-2xl tracking-widest text-center md:text-left">ARTEM NESTEROV</h1>
+            <div class="block mt-6 font-serif text-neutral-700 text-center md:text-left">{{ page.sub-heading }}</div>
+            <div class="block font-serif text-neutral-700 text-center md:text-left">{{ page.school }}</div>
+            <div class="flex justify-center md:justify-start">
+              <img src="{{'assets/img/nesterov_jpeg.jpg'}}" alt="" class="mt-4">
+            </div>
             <ul class="footer-links mt-4">
               <a target="_blank" href="mailto:artem.nesterov@durham.ac.uk"><span class="icon-mail3"></span></a>    
               {% for entry in site.data.social %}
@@ -18,7 +20,7 @@
               {% endfor %}  
             </ul>
           </div>
-          <div class="w-full md:w-3/4 mt-8 pl-12">
+          <div class="w-full md:w-3/4 mt-8 pl-0 md:pl-12">
             <div class="mb-8">
               <h1 class="text-bold text-xl my-1 tracking-widest">JOB MARKET</h1>
               {% for entry in site.data.jobmarket %}

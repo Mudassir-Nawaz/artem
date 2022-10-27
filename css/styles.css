@@ -641,10 +641,18 @@ video {
   flex-direction: column;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .border-t-\[6px\] {
@@ -675,6 +683,14 @@ video {
 
 .pl-12 {
   padding-left: 3rem;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-Lato {
@@ -748,6 +764,18 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }
 
