@@ -1,8 +1,8 @@
-- link: //www.twitter.com/twitter_handle 
-  icon: icon-twitter
-- link: //plus.google.com/+googlePlusName 
+# - link: //www.twitter.com/twitter_handle 
+#   icon: icon-twitter
+- link: https://scholar.google.com/citations?user=8CcLBKkAAAAJ 
   icon: icon-google2
-- link: //github.com/GithubHandle 
+- link: https://github.com/ayn2 
   icon: icon-github
 # - link: //www.flickr.com/photos/FlickrUserID 
 #   icon: icon-flickr3
@@ -10,5 +10,5 @@
 #   icon: icon-rss2
 # - link: //vimeo.com/vimeo-id
 #   icon: icon-vimeo2
-- link: //www.linkedin.com/
+- link: https://uk.linkedin.com/in/nesterov87
   icon: icon-linkedin

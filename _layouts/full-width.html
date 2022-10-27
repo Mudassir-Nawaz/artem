@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="full-width font-Lato">
+  <body style="width: 100% !important; margin: 0 auto !important;" class="full-width font-Lato">
     {% include header.html %}
     <section class="p-10">
-      <div class="">
+      <div class="container mx-auto">
         <div class="flex flex-col md:flex-row">
           <div class="border-t-[6px] border-black w-full md:w-1/4 py-2">
-            <h1 class="text-bold text-2xl">ARTEM NESTEROV</h1>
+            <h1 class="text-bold text-2xl tracking-widest">ARTEM NESTEROV</h1>
             <span class="block mt-6 font-serif text-neutral-700">{{ page.sub-heading }}</span>
             <span class="block font-serif text-neutral-700">{{ page.school }}</span>
-            <img src="{{'assets/img/nesterov_jpeg.jpg'}}" alt="">
+            <img src="{{'assets/img/nesterov_jpeg.jpg'}}" alt="" class="mt-4">
             <ul class="footer-links mt-4">
-              <li><a href="mailto:hate@spam.net"><span class="icon-mail3"></span></a></li>    
+              <a target="_blank" href="mailto:artem.nesterov@durham.ac.uk"><span class="icon-mail3"></span></a>    
               {% for entry in site.data.social %}
-                <li>
-                  <a href="{{ entry.link }}"><span class="{{ entry.icon }}"></span></a>
-                </li>
+                <a target="_blank" href="{{ entry.link }}"><span class="{{ entry.icon }}"></span></a>
               {% endfor %}  
             </ul>
           </div>
-          <div class="w-full md:w-3/4 mt-8 pl-5">
+          <div class="w-full md:w-3/4 mt-8 pl-10">
             <div class="mb-8">
-              <h1 class="text-bold text-2xl">JOB MARKET</h1>
+              <h1 class="text-bold text-xl my-1 tracking-widest">JOB MARKET</h1>
+              {% for entry in site.data.jobmarket %}
               <div class="border-t-[6px] border-black font-serif">
-                {{ page.job-market }} <a href="#" class="text-blue-600" style="all: revert;">{{ page.link-text }}</a>
+                {{ entry.job-market }} <a href="{{ entry.link }}" class="text-blue-600" style="all: revert;">{{ entry.link-title }}</a>
               </div>
+              {% endfor %}
             </div>
             <div class="mb-8">
-              <h1 class="text-bold text-2xl">RESEARCH</h1>
+              <h1 class="text-bold text-xl my-1 tracking-widest">RESEARCH</h1>
               <div class="border-t-[6px] border-black font-serif space-y-4">
                 <div>
                   <span class="underline">Endogenous Monitoring Through Gossiping in an Infinitely Repeated Prisoner's Dilemma Game: Experimental Evidence</span> with <a style="all: revert;" href="https://sites.google.com/site/kenjukamei2011/">Kenju Kamei</a>
@@ -60,17 +60,22 @@
                     </p>
                   </div> -->
                 </div>
+                {% for entry in site.data.research %}
+                  <div>
+                    <span class="underline">{{ entry.title }}</span>
+                  </div>
+                {% endfor %}
               </div>
             </div>
             <div class="mb-8">
-              <h1 class="text-bold text-2xl">SOFTWARE</h1>
+              <h1 class="text-bold text-xl my-1 tracking-widest">SOFTWARE</h1>
               <div class="border-t-[6px] border-black font-serif">
                 <p class="font-bold text-lg mt-2" style="width: 100%;" >Co-developer for SyGNet: Synthetic data using Generative Adversarial Networks</p>
                 <p class="text-base  mt-2" style="width: 100%;" >SyGNet is a Python package for generating synthetic data for the social sciences using deep learning methods. <a target="_blank" href="https://github.com/tsrobinson/SyGNet" style="all: revert;">[github]</a> <a target="_blank" href="https://pypi.org/project/sygnet/" style="all: revert;"> [pypi]</a></p>
               </div>
             </div>
             <div class="mb-8">
-              <h1 class="text-bold text-2xl">TEACHING</h1>
+              <h1 class="text-bold text-xl my-1 tracking-widest">TEACHING</h1>
               <div class="border-t-[6px] border-black font-serif">
                 <div>
                   <div>
@@ -79,9 +84,9 @@
                   <div>
                     <a id="listBtn" style="all: revert;">[Show list of courses]</a>
                     <ul class="text-base hidden mt-2" style="width: 100%;" id="list">
-                      <a href="https://www.dur.ac.uk/postgraduate.modules/module_description/?year=2022&module_code=ECON40N15" class="block" style="all: none;">ECON40N15: Python for Finance</a>
-                      <a href="https://www.dur.ac.uk/faculty.handbook/archive/module_description/?year=2012&module_code=ECON2141" class="block" style="all: none;">ECON2141: Behavioural and Experimental Economics</a>
-                      <a href="https://www.dur.ac.uk/faculty.handbook/archive/module_description/?year=2021&module_code=ECON2061" class="block" style="all: none;">ECON2061: Economic Data Analysis</a>
+                      {% for entry in site.data.modules %}
+                      <a target="_blank" href="{{ entry.link }}" class="block" style="all: none;">{{ entry.name }}</a>
+                      {% endfor %}
                     </ul>
                   </div>
                 </div>
