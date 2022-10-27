@@ -25,7 +25,7 @@
               <h1 class="text-bold text-xl my-1 tracking-widest">JOB MARKET</h1>
               {% for entry in site.data.jobmarket %}
               <div class="border-t-[6px] border-black font-serif">
-                {{ entry.job-market }} <a href="{{ entry.link }}" class="text-blue-600" style="all: revert;">{{ entry.link-title }}</a>
+                {{ entry.job-market }} <a href="{{ entry.link }}" class="text-blue-600" style="all: revert;">{{ entry.link-title }}</a> {{ entry.job-market2 }}
               </div>
               {% endfor %}
             </div>
