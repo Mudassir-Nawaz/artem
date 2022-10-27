@@ -17,15 +17,15 @@
               <a target="_blank" href="mailto:artem.nesterov@durham.ac.uk"><span class="icon-mail3"></span></a>    
               {% for entry in site.data.social %}
                 <a target="_blank" href="{{ entry.link }}"><span class="{{ entry.icon }}"></span></a>
-              {% endfor %}  
+              {% endfor %}
             </ul>
           </div>
           <div class="w-full md:w-3/4 mt-8 pl-0 md:pl-12">
             <div class="mb-8">
               <h1 class="text-bold text-xl my-1 tracking-widest">JOB MARKET</h1>
-<!--              {% for entry in site.data.jobmarket %}-->
+              {% for entry in site.data.jobmarket %}
               <div class="border-t-[6px] border-black font-serif">
-                {{ entry.job-market}} <a href="{{ entry.link }}" class="text-blue-600" style="all: revert;">{{ entry.link-title }}</a>. We explore
+                {{ entry.job-market}} <a href="{{ entry.link }}" class="text-blue-600" style="all: revert;">{{ entry.link-title }}</a>
               </div>
               {% endfor %}
             </div>
